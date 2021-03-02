@@ -29,7 +29,8 @@ api = Api(app)
 
 
 '''
-To create the sqlite database
+To create the database execute the following code in the python interpreter
+This only works for mysql > 5.5
 > python
 import receiverlnpi
 receiverlnpi.db.create_all()
