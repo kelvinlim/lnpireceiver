@@ -43,8 +43,10 @@ exit()
 ```
 
 ## to start the  server
+```
+# change the app.config['SQLALCHEMY_DATABASE_URI'] to a correct URI first
 python receiverlnpi.py
-
+```
 
 ## to create a docker container
 ```
