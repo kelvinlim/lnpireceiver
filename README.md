@@ -1,4 +1,4 @@
-# datareceiver
+# lnpireceiver
 a simple flask server to accept json data from a source such as a flutter app.
 This is based on code from https://rahmanfadhil.com/flask-rest-api/
 
@@ -42,7 +42,7 @@ receiverlnpi.db.create_all()
 exit()
 ```
 
-## to start the test server
+## to start the  server
 python receiverlnpi.py
 
 
@@ -50,7 +50,7 @@ python receiverlnpi.py
 ```bash
 python -m venv venv/flaskrest
 source venv/flaskrest/bin/activate
-cd datareceiver
+cd lnpireceiver
 pip install -r requirements.txt
 ```
 
