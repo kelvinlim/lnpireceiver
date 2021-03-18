@@ -24,8 +24,7 @@ curl http://160.94.0.29:5000/posts -X POST -H "Content-Type: application/json" -
 ```
 For flutter see:  https://flutter.dev/docs/cookbook/networking/send-data
 
-## to check on the data, only for testing, don't want to
-be able to do this in production
+## to check on the data, only for testing, don't want to be able to do this in production
 ```bash
 To check on all data
 curl http://160.94.0.29:5000/posts
@@ -35,6 +34,7 @@ curl http://160.94.0.29:5000/posts
 
 ## to initialize the  database
 ```python
+# change the app.config['SQLALCHEMY_DATABASE_URI'] to a correct URI first
 $ python
 import receiverlnpi
 receiverlnpi.db.create_all()
@@ -61,6 +61,9 @@ sudo docker images | grep lnpi
 # to run the container on port 5001
 # this makes it available at http://localhost:5001/posts 
 sudo docker run -p 5001:5001 lnpireceiver
+
+# there is a file x0-29.conf which is an apache config file
+# which sets up reverseproxy
 ```
 
 ## to initialize a virtual environment
