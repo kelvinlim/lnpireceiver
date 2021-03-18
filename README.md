@@ -34,15 +34,16 @@ To check on single entry
 curl http://160.94.0.29:5000/posts/1
 ```
 
-## to initialize the sqlite database
+## to initialize the  database
 ```python
-import receiver
-receiver.db.create_all()
+$ python
+import receiverlnpi
+receiverlnpi.db.create_all()
 exit()
 ```
 
 ## to start the test server
-python receiver.py
+python receiverlnpi.py
 
 
 ## to initialize a virtual environment
