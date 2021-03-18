@@ -22,7 +22,10 @@ CORS(app)
 
 ### TODO move mysql  https://docs.sqlalchemy.org/en/14/dialects/mysql.html
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://restreceiver:qtIyxFNIWfKQBH2!@lnpiapp.med.umn.edu/lnpi_restreceiver'
+
+# change this to use use a file
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://restreceiver:NOTREALPASSWORD@lnpiapp.med.umn.edu/lnpi_restreceiver'
+
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
 api = Api(app)
