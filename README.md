@@ -46,6 +46,20 @@ exit()
 python receiverlnpi.py
 
 
+## to create a docker container
+```
+# run this command in the lnpireceiver directory
+sudo docker build -t lnpireceiver .
+
+```
+
+## to run the container
+```
+# get the info on the container
+sudo docker images | grep lnpi
+sudo docker run 
+```
+
 ## to initialize a virtual environment
 ```bash
 python -m venv venv/flaskrest
