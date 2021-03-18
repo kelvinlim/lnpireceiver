@@ -57,7 +57,9 @@ sudo docker build -t lnpireceiver .
 ```
 # get the info on the container
 sudo docker images | grep lnpi
-sudo docker run 
+# to run the container on port 5001
+# this makes it available at http://localhost:5001/posts 
+sudo docker run -p 5001:5001 lnpireceiver
 ```
 
 ## to initialize a virtual environment
