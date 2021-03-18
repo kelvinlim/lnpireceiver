@@ -30,8 +30,7 @@ be able to do this in production
 To check on all data
 curl http://160.94.0.29:5000/posts
 
-To check on single entry
-curl http://160.94.0.29:5000/posts/1
+
 ```
 
 ## to initialize the  database
